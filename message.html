@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div class="min-h-screen bg-blue-500">
+        <div class="p-4 flex justify-between items-center ">
+            <h1 class="text-white font-light">消息</h1>
+            <div class="h-8 w-8 bg-white"></div>
+        </div>
+        <div class="px-4 flex justify-between">
+            <div class="h-24 w-24 bg-white"></div>
+            <div class="h-24 w-24 bg-white"></div>
+            <div class="h-24 w-24 bg-white"></div>
+            <div class="h-24 w-24 bg-white"></div>
+        </div>
+        <div class="mt-8 bg-white p-4 rounded-2xl overflow-hidden ">
+            <h2>2020.01.20 | 今天</h2>
+            <div class="shadow-md p-4 my-2">
+                <h3>退学警告</h3>
+                <ul class="text-muted mt-4">
+                    <li>发起人：张三</li>
+                    <li>发起人：张三</li>
+                </ul>
+            </div>
+            <div class="shadow-md p-4 my-2">
+                <h3>退学警告</h3>
+                <ul class="text-muted mt-4">
+                    <li>发起人：张三</li>
+                    <li>发起人：张三</li>
+                </ul>
+            </div>
+            <div class="shadow-md p-4 my-2">
+                <h3>退学警告</h3>
+                <ul class="text-muted mt-4">
+                    <li>发起人：张三</li>
+                    <li>发起人：张三</li>
+                </ul>
+            </div>
+            <div class="shadow-md p-4 my-2">
+                <h3>退学警告</h3>
+                <ul class="text-muted mt-4">
+                    <li>发起人：张三</li>
+                    <li>发起人：张三</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="tab" class="w-screen px-8 py-2 text-xs font-light bg-white shadow-md flex justify-between fixed bottom-0">
+        <div class="flex flex-col items-center" onclick="window.location.href = '/index.html'">
+            <i class="text-xl fas fa-home pb-1"></i>
+            <span>首页</span>
+        </div>
+        <div class="flex flex-col items-center text-blue-500">
+            <i class="text-xl fas fa-home pb-1"></i>
+            <span>消息</span>
+        </div>
+        <div class="flex flex-col items-center">
+            <i class="text-xl fas fa-home pb-1"></i>
+            <span>我的</span>
+        </div>
+    </div>
+    <!-- <script>
+            const tabEl = document.querySelectorAll('#tab > div')
+            tabEl.forEach(el => {
+                el.addEventListener('click', (e) => {
+                    tabEl.forEach((el) => el.classList.remove('text-blue-500'))
+                    e.currentTarget.classList.add('text-blue-500')
+                })
+            })
+        </script> -->
+</body>
+
+</html>
