@@ -1,9 +1,23 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?pzejzu');
+  src: url('../fonts/icomoon.eot?pzejzu#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?pzejzu') format('truetype'), url('../fonts/icomoon.woff?pzejzu') format('woff'), url('../fonts/icomoon.svg?pzejzu#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 * {
   margin: 0;
   padding: 0;
 }
 a {
   text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.active {
+  color: #227bff;
 }
 html {
   font-size: 50px;
@@ -74,8 +88,137 @@ body {
   margin: 0 auto;
   line-height: 1.5;
   font-family: Arial, Helvetica;
-  background-color: #f2f2f2;
+  background-color: pink;
+  min-height: 1vh;
 }
-body {
+body > div:first-child {
   background-color: #227bff;
+  overflow: hidden;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.64rem;
+}
+header h1 {
+  font-size: 0.8rem;
+  color: white;
+}
+header span {
+  width: 0.8rem;
+  height: 0.8rem;
+  background: url(../ico/scan@2x.png) no-repeat;
+  background-size: 100%;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.64rem;
+  list-style: none;
+}
+nav ul li {
+  width: 2.6rem;
+  height: 2.6rem;
+  font-size: 0.52rem;
+  color: white;
+  text-align: center;
+}
+nav ul li::before {
+  content: '';
+  display: block;
+  margin: auto;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+nav ul li:nth-child(1)::before {
+  background: url(../ico/index_join@2x.png) no-repeat;
+  background-size: 100%;
+}
+nav ul li:nth-child(2)::before {
+  background: url(../ico/index_create@2x.png) no-repeat center;
+  background-size: 100%;
+}
+nav ul li:nth-child(3)::before {
+  background: url(../ico/index_enter@2x.png) no-repeat center;
+  background-size: 100%;
+}
+nav ul li:nth-child(4)::before {
+  background: url(../ico/index_count@2x.png) no-repeat center;
+  background-size: 100%;
+}
+article {
+  min-height: 80vh;
+  background-color: #fff;
+  border-radius: 1.2rem 1.2rem 0 0;
+  padding: 0.4rem;
+  padding-top: 1.2rem;
+}
+article > div h3 {
+  padding-top: 0.64rem;
+  font-size: 0.64rem;
+}
+article > div section > div {
+  margin-top: 0.32rem;
+  padding: 0.4rem;
+  border: 1px solid #ffffff;
+  border-radius: 0.2rem;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
+  height: 3.2rem;
+}
+article > div section > div h4 {
+  position: relative;
+  font-size: 0.56rem;
+}
+article > div section > div h4::before {
+  content: '已退出';
+  position: absolute;
+  right: 0;
+  display: block;
+  color: #eb531f;
+  font-weight: normal;
+  font-size: 0.56rem;
+}
+article > div section > div div {
+  padding-top: 0.6rem;
+  color: #c2c2c7;
+  font-size: 0.48rem;
+}
+article::after {
+  content: '';
+  display: block;
+  height: 2.4rem;
+}
+footer {
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 15rem;
+}
+footer ul {
+  padding: 0 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.56rem;
+  color: #c2c2c7;
+}
+footer ul li {
+  text-align: center;
+}
+footer ul li::before {
+  font-family: 'icomoon';
+  font-size: 1rem;
+  text-align: center;
+  display: block;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+footer ul li:nth-child(1)::before {
+  content: '\e900';
+}
+footer ul li:nth-child(2)::before {
+  content: '\e96c';
+}
+footer ul li:nth-child(3)::before {
+  content: '\e971';
 }
