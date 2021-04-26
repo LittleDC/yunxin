@@ -1,0 +1,228 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?pzejzu');
+  src: url('../fonts/icomoon.eot?pzejzu#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?pzejzu') format('truetype'), url('../fonts/icomoon.woff?pzejzu') format('woff'), url('../fonts/icomoon.svg?pzejzu#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.active {
+  color: #227bff;
+}
+html {
+  font-size: 50px;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 21.33333333px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 25.6px;
+  }
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 26.66666667px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 27.6px;
+  }
+}
+@media screen and (min-width: 424px) {
+  html {
+    font-size: 28.26666667px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 540px) {
+  html {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 50px;
+  }
+}
+body {
+  min-width: 320px;
+  width: 15rem;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: Arial, Helvetica;
+  background-color: pink;
+  min-height: 1vh;
+}
+body > div:first-child {
+  background-color: #227bff;
+  overflow: hidden;
+}
+header > div {
+  position: relative;
+  display: flex;
+  margin: 1.6rem 0;
+  padding: 0.4rem 0.8rem;
+  background-color: rgba(57, 11, 61, 0.25);
+  border: 0.08rem solid rgba(187, 187, 187, 0.2);
+  border-width: 0.08rem 0;
+}
+header > div i {
+  display: block;
+  width: 2.96rem;
+  height: 2.96rem;
+  border-radius: 1.48rem;
+  overflow: hidden;
+}
+header > div i img {
+  width: 2.96rem;
+  margin-top: -25%;
+}
+header > div > div {
+  padding-left: 0.8rem;
+  color: #cdc1ce;
+  font-size: 0.56rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header > div > div p {
+  padding: 0.2rem 0;
+}
+header > div::before {
+  position: absolute;
+  font-family: icomoon;
+  content: '\eaa3';
+  display: block;
+  color: #cdc1ce;
+  right: 1rem;
+  top: 1.12rem;
+}
+article {
+  min-height: 80vh;
+  background-color: #fff;
+  border-radius: 1.2rem 1.2rem 0 0;
+  padding: 0.4rem;
+  padding-top: 1.2rem;
+}
+article ul li {
+  position: relative;
+  font-size: 0.6rem;
+  height: 1.92rem;
+  line-height: 1.92rem;
+  padding-left: 1.2rem;
+  border-bottom: 2px solid #eee;
+}
+article ul li::before {
+  position: absolute;
+  top: -0.04rem;
+  left: 0.24rem;
+  font-family: icomoon;
+  font-size: 0.72rem;
+  display: block;
+}
+article ul li:nth-child(1)::before {
+  content: '\ea09';
+}
+article ul li:nth-child(2)::before {
+  content: '\ea0c';
+}
+article ul li:nth-child(3)::before {
+  content: '\e9e0';
+}
+article ul li:nth-child(4)::before {
+  content: '\e994';
+}
+article > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  height: 8rem;
+}
+article > div i {
+  display: block;
+  width: 3.32rem;
+  height: 3.08rem;
+  text-align: center;
+  line-height: 3.08rem;
+  color: #fff;
+  background: url(../ico/add@2x.png) no-repeat;
+  background-size: 100%;
+}
+article::after {
+  content: '';
+  display: block;
+  height: 2.4rem;
+}
+footer {
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 15rem;
+}
+footer ul {
+  padding: 0 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.56rem;
+  color: #c2c2c7;
+}
+footer ul li {
+  text-align: center;
+}
+footer ul li::before {
+  font-family: 'icomoon';
+  font-size: 1rem;
+  text-align: center;
+  display: block;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+footer ul li:nth-child(1)::before {
+  content: '\e900';
+}
+footer ul li:nth-child(2)::before {
+  content: '\e96c';
+}
+footer ul li:nth-child(3)::before {
+  content: '\e971';
+}

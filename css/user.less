@@ -1,0 +1,178 @@
+@import url(./common.less);
+
+body {
+  min-width: 320px;
+  width: 15rem;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: Arial, Helvetica;
+  // background-color: #227bff;
+  background-color: pink;
+  min-height: 1vh;
+}
+
+body>div:first-child {
+  background-color: #227bff;
+  overflow: hidden;
+}
+
+@baseFont: 25;
+
+header {
+  >div {
+    position: relative;
+    display: flex;
+    margin: (40rem/@baseFont) 0;
+    padding: (10rem/@baseFont) (20rem/@baseFont);
+    background-color: rgba(57, 11, 61, .25);
+    border: (2rem/@baseFont) solid rgba(187, 187, 187, .2);
+    border-width: (2rem/@baseFont) 0;
+
+    i {
+      display: block;
+      width: (74rem/@baseFont);
+      height: (74rem/@baseFont);
+      border-radius: (37rem/@baseFont);
+      overflow: hidden;
+
+      img {
+        width: (74rem/@baseFont);
+        margin-top: -25%;
+      }
+    }
+
+    >div {
+      padding-left: (20rem/@baseFont);
+      color: #cdc1ce;
+      font-size: (14rem/@baseFont);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      p {
+        padding: (5rem/@baseFont) 0;
+      }
+    }
+  }
+
+  >div::before {
+    position: absolute;
+    font-family: icomoon;
+    content: '\eaa3';
+    display: block;
+    color: #cdc1ce;
+    right: (25rem/@baseFont);
+    top: (28rem/@baseFont);
+  }
+}
+
+article {
+  min-height: 80vh;
+  background-color: #fff;
+  border-radius: (30rem/@baseFont) (30rem/@baseFont) 0 0;
+  padding: (10rem/@baseFont);
+  padding-top: (30rem/@baseFont);
+
+  ul li {
+    position: relative;
+    font-size: (15rem/@baseFont);
+    height: (48rem/@baseFont);
+    line-height: (48rem/@baseFont);
+    padding-left: (30rem/@baseFont);
+    border-bottom: 2px solid #eee;
+  }
+
+  ul li::before {
+    position: absolute;
+    top: (-1rem/@baseFont);
+    left: (6rem/@baseFont);
+    font-family: icomoon;
+    font-size: (18rem/@baseFont);
+    display: block;
+  }
+
+  ul li:nth-child(1)::before {
+    content: '\ea09';
+  }
+
+  ul li:nth-child(2)::before {
+    content: '\ea0c';
+  }
+
+  ul li:nth-child(3)::before {
+    content: '\e9e0';
+  }
+
+  ul li:nth-child(4)::before {
+    content: '\e994';
+  }
+
+  >div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: (20rem/@baseFont);
+    height: (200rem/@baseFont);
+
+    i {
+      display: block;
+      width: (83rem/@baseFont);
+      height: (77rem/@baseFont);
+      text-align: center;
+      line-height: (77rem/@baseFont);
+      color: #fff;
+      background: url(../ico/add@2x.png) no-repeat;
+      background-size: 100%;
+    }
+  }
+}
+
+article::after {
+  content: '';
+  display: block;
+  height: (60rem/@baseFont);
+
+}
+
+footer {
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  // height: (60rem/@baseFont);
+  width: 15rem;
+
+  ul {
+    padding: 0 (30rem/@baseFont);
+    display: flex;
+    justify-content: space-between;
+    font-size: (14rem/@baseFont);
+    color: #c2c2c7;
+
+    li {
+      text-align: center;
+    }
+
+    li::before {
+      font-family: 'icomoon';
+      font-size: (25rem/@baseFont);
+      text-align: center;
+      display: block;
+      width: (30rem/@baseFont);
+      height: (30rem/@baseFont);
+    }
+
+    li:nth-child(1)::before {
+      content: '\e900';
+    }
+
+    li:nth-child(2)::before {
+      content: '\e96c';
+    }
+
+    li:nth-child(3)::before {
+      content: '\e971';
+    }
+  }
+
+}
