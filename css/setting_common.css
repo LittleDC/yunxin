@@ -103,6 +103,9 @@ body {
 .gray {
   color: #aba6a6 !important;
 }
+.blue {
+  color: #227bff !important;
+}
 body > div:first-child {
   background-color: #f4f6f7;
   overflow: hidden;
@@ -149,7 +152,18 @@ article .photo > div img {
   width: 2.2rem;
   margin-top: -25%;
 }
+article .account {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.8rem 0;
+  padding: 0 1.4rem 0 0.6rem;
+  background-color: #fff;
+  height: 2rem;
+}
 article .photo::after,
+article .account::after,
 article .details li::after {
   position: absolute;
   right: 0;
@@ -173,6 +187,9 @@ article ul.details li {
   height: 2.4rem;
   padding-right: 0.8rem;
   border-bottom: 0.04rem solid rgba(187, 187, 187, 0.2);
+}
+article ul.details li:last-child {
+  border-bottom: 0;
 }
 article ul.details li::after {
   margin-right: -0.2rem;

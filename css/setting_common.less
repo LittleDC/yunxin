@@ -19,6 +19,10 @@ body {
   color: #aba6a6 !important;
 }
 
+.blue {
+  color: #227bff !important;
+}
+
 body>div:first-child {
   // background-color: #fff;
   background-color: #f4f6f7;
@@ -76,7 +80,19 @@ article {
     }
   }
 
+  .account {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    margin: (20rem/@baseFont) 0;
+    padding: 0 (35rem/@baseFont) 0 (15rem/@baseFont);
+    background-color: #fff;
+    height: (50rem/@baseFont);
+  }
+
   .photo::after,
+  .account::after,
   .details li::after {
     position: absolute;
     right: 0;
@@ -102,6 +118,10 @@ article {
       // padding: 0 (35rem/@baseFont) 0 (15rem/@baseFont);
       padding-right: (20rem/@baseFont);
       border-bottom: (1rem/@baseFont) solid rgba(187, 187, 187, .2);
+    }
+
+    li:last-child {
+      border-bottom: 0;
     }
 
     li::after {
