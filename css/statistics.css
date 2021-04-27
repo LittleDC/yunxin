@@ -34,7 +34,9 @@ article {
   margin-top: 0.4rem;
 }
 article .search_bar {
+  box-sizing: border-box;
   height: 1.4rem;
+  margin: 0 0.52rem;
   padding: 0 0.52rem;
   display: flex;
   align-items: center;
