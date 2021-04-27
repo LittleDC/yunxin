@@ -207,6 +207,7 @@ footer ul {
   color: #c2c2c7;
 }
 footer ul li {
+  padding: 0 0.4rem;
   text-align: center;
 }
 footer ul li::before {

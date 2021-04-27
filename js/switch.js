@@ -10,26 +10,26 @@ console.log(lists);
 //         lists[i].classList.add('active')
 //     }
 // }
-lists[0].onclick = () => {
+lists[0].ontouchstart = () => {
+    // console.log('1');
     for (let i = 0; i < lists.length; i++) {
         lists[i].classList.remove('active')
-        console.log(i);
     }
     lists[0].classList.add('active')
     window.location.href = './index.html'
 }
-lists[1].onclick = () => {
+lists[1].ontouchstart = () => {
+    // console.log('2');
     for (let i = 0; i < lists.length; i++) {
         lists[i].classList.remove('active')
-        console.log(i);
     }
     lists[1].classList.add('active')
     window.location.href = './message.html'
 }
-lists[2].onclick = () => {
+lists[2].ontouchstart = () => {
+    // console.log('3');
     for (let i = 0; i < lists.length; i++) {
         lists[i].classList.remove('active')
-        console.log(i);
     }
     lists[2].classList.add('active')
     window.location.href = './user.html'
