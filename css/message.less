@@ -1,0 +1,161 @@
+@import url(./common.less);
+
+body {
+  min-width: 320px;
+  width: 15rem;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: Arial, Helvetica;
+  // background-color: #227bff;
+  background-color: white;
+  min-height: 1vh;
+}
+
+.none {
+  display: none !important;
+}
+
+body>div:first-child {
+  background-color: #fff;
+  overflow: hidden;
+}
+
+@baseFont: 25;
+
+header {
+  position: relative;
+  text-align: center;
+  height: (44rem/@baseFont);
+  line-height: (44rem/@baseFont);
+  border-bottom: (3rem/@baseFont) solid #e5e5e5;
+  padding-top: (10rem/@baseFont);
+
+  i {
+    position: absolute;
+    font-size: (16rem/@baseFont);
+    color: #227bff;
+    right: (15rem/@baseFont);
+    padding: 0 (10rem/@baseFont);
+  }
+}
+
+// header::before {
+//   position: absolute;
+//   content: '清空';
+//   display: block;
+//   font-size: (16rem/@baseFont);
+//   color: #227bff;
+//   right: (25rem/@baseFont);
+// }
+
+article {
+  .content .box {
+    height: (68rem/@baseFont);
+    display: flex;
+    align-items: center;
+    border-bottom: (2rem/@baseFont) solid #e5e5e5;
+
+    img {
+      box-sizing: border-box;
+      // border: (1rem/@baseFont) solid #bbbbbb;
+      margin-left: (10rem/@baseFont);
+      width: (50rem/@baseFont);
+      height: (50rem/@baseFont);
+    }
+
+    .details {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      // position: relative;
+      padding: (10rem/@baseFont);
+      // padding-top: 0;
+
+      span {
+        font-size: (17rem/@baseFont);
+      }
+
+      p {
+        font-size: (14rem/@baseFont);
+      }
+
+    }
+
+    i {
+      font-size: (12rem/@baseFont);
+      font-style: normal;
+      // padding-top: (5rem/@baseFont);
+      padding-right: (10rem/@baseFont);
+      color: #b2b2b2;
+    }
+  }
+
+  .empty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: (160rem/@baseFont);
+
+    p {
+      font-size: (14rem/@baseFont);
+    }
+
+    div {
+      width: (195rem/@baseFont);
+      height: (174rem/@baseFont);
+      background: url(../ico/empty_message@2x.png)no-repeat;
+      background-size: 100%;
+    }
+  }
+}
+
+article::after {
+  content: '';
+  display: block;
+  height: (60rem/@baseFont);
+}
+
+footer {
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  // height: (60rem/@baseFont);
+  width: 15rem;
+
+  ul {
+    padding: 0 (30rem/@baseFont);
+    display: flex;
+    justify-content: space-between;
+    font-size: (14rem/@baseFont);
+    color: #c2c2c7;
+
+    li {
+      padding: 0 (10rem/@baseFont);
+      text-align: center;
+    }
+
+    li::before {
+      font-family: 'icomoon';
+      font-size: (25rem/@baseFont);
+      text-align: center;
+      display: block;
+      width: (30rem/@baseFont);
+      height: (30rem/@baseFont);
+    }
+
+    li:nth-child(1)::before {
+      content: '\e900';
+    }
+
+    li:nth-child(2)::before {
+      content: '\e96c';
+    }
+
+    li:nth-child(3)::before {
+      content: '\e971';
+    }
+  }
+
+}

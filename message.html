@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/message.css">
   <title>在线自习室</title>
 
 </head>
@@ -15,23 +15,34 @@
   <!-- 主体 -->
   <div class="">
     <header>
-      <h1>在线自习室</h1>
-      <span></span>
+      <i>清空</i>
+      消息
     </header>
-
-    <!-- icons -->
-    <nav>
-      <ul>
-        <li>加入自习室</li>
-        <li>创建自习室</li>
-        <li>进入自习室</li>
-        <li>数据统计</li>
-      </ul>
-    </nav>
 
     <!-- 中部卡片区域 -->
     <article>
-
+      <div class="content">
+        <div class="box">
+          <img src="./uploads/message_ico1@2x.png" alt="">
+          <div class="details">
+            <span>云信小助手</span>
+            <p>助手提醒</p>
+          </div>
+          <i>12:22</i>
+        </div>
+        <div class="box">
+          <img src="./uploads/message_icon2@2x.png" alt="">
+          <div class="details">
+            <span>石原里美</span>
+            <p>今天一起自习吗</p>
+          </div>
+          <i>12:22</i>
+        </div>
+      </div>
+      <div class="empty none">
+        <div></div>
+        <p>暂无消息</p>
+      </div>
     </article>
 
     <!-- 底部导航栏 -->
@@ -46,6 +57,7 @@
 
   <script src="./js/jQuery.js"></script>
   <script src="./js/switch.js"></script>
+  <script src="./js/message_empty.js"></script>
 </body>
 
 </html>

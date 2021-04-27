@@ -16,6 +16,9 @@ a {
 li {
   list-style: none;
 }
+i {
+  font-style: normal;
+}
 .active {
   color: #227bff;
 }
@@ -88,105 +91,76 @@ body {
   margin: 0 auto;
   line-height: 1.5;
   font-family: Arial, Helvetica;
-  background-color: pink;
+  background-color: white;
   min-height: 1vh;
 }
+.none {
+  display: none !important;
+}
 body > div:first-child {
-  background-color: #227bff;
+  background-color: #fff;
   overflow: hidden;
 }
-header > div {
+header {
   position: relative;
+  text-align: center;
+  height: 1.76rem;
+  line-height: 1.76rem;
+  border-bottom: 0.12rem solid #e5e5e5;
+  padding-top: 0.4rem;
+}
+header i {
+  position: absolute;
+  font-size: 0.64rem;
+  color: #227bff;
+  right: 0.6rem;
+  padding: 0 0.4rem;
+}
+article .content .box {
+  height: 2.72rem;
   display: flex;
-  margin: 1.4rem 0;
-  padding: 0.4rem 0.8rem;
-  background-color: rgba(57, 11, 61, 0.25);
-  border: 0.08rem solid rgba(187, 187, 187, 0.2);
-  border-width: 0.08rem 0;
+  align-items: center;
+  border-bottom: 0.08rem solid #e5e5e5;
 }
-header > div i {
-  display: block;
-  width: 2.96rem;
-  height: 2.96rem;
-  border-radius: 1.48rem;
-  overflow: hidden;
+article .content .box img {
+  box-sizing: border-box;
+  margin-left: 0.4rem;
+  width: 2rem;
+  height: 2rem;
 }
-header > div i img {
-  width: 2.96rem;
-  margin-top: -25%;
-}
-header > div > div {
-  padding-left: 0.8rem;
-  color: #cdc1ce;
-  font-size: 0.56rem;
+article .content .box .details {
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-header > div > div p {
-  padding: 0.2rem 0;
-}
-header > div::before {
-  position: absolute;
-  font-family: icomoon;
-  content: '\eaa3';
-  display: block;
-  color: #cdc1ce;
-  right: 1rem;
-  top: 1.12rem;
-}
-article {
-  min-height: 80vh;
-  background-color: #fff;
-  border-radius: 1.2rem 1.2rem 0 0;
   padding: 0.4rem;
-  padding-top: 1.2rem;
 }
-article ul li {
-  position: relative;
-  font-size: 0.6rem;
-  height: 1.92rem;
-  line-height: 1.92rem;
-  padding-left: 1.2rem;
-  border-bottom: 2px solid #eee;
+article .content .box .details span {
+  font-size: 0.68rem;
 }
-article ul li::before {
-  position: absolute;
-  top: -0.04rem;
-  left: 0.24rem;
-  font-family: icomoon;
-  font-size: 0.72rem;
-  display: block;
+article .content .box .details p {
+  font-size: 0.56rem;
 }
-article ul li:nth-child(1)::before {
-  content: '\ea09';
+article .content .box i {
+  font-size: 0.48rem;
+  font-style: normal;
+  padding-right: 0.4rem;
+  color: #b2b2b2;
 }
-article ul li:nth-child(2)::before {
-  content: '\ea0c';
-}
-article ul li:nth-child(3)::before {
-  content: '\e9e0';
-}
-article ul li:nth-child(4)::before {
-  content: '\e994';
-}
-article > div {
+article .empty {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 0.8rem;
-  height: 8rem;
+  padding-top: 6.4rem;
 }
-article > div i {
-  display: block;
-  width: 3.32rem;
-  height: 3.08rem;
-  text-align: center;
-  font-style: normal;
-  line-height: 3.08rem;
-  color: #fff;
-  background: url(../ico/add@2x.png) no-repeat;
+article .empty p {
+  font-size: 0.56rem;
+}
+article .empty div {
+  width: 7.8rem;
+  height: 6.96rem;
+  background: url(../ico/empty_message@2x.png) no-repeat;
   background-size: 100%;
 }
 article::after {
