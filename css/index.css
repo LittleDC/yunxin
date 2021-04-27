@@ -16,10 +16,16 @@ a {
 li {
   list-style: none;
 }
+i {
+  font-style: normal;
+}
 .active {
   color: #227bff;
 }
 html {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
   font-size: 50px;
 }
 @media screen and (min-width: 320px) {
@@ -88,7 +94,7 @@ body {
   margin: 0 auto;
   line-height: 1.5;
   font-family: Arial, Helvetica;
-  background-color: pink;
+  background-color: #227bff;
   min-height: 1vh;
 }
 body > div:first-child {

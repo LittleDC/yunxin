@@ -23,6 +23,9 @@ i {
   color: #227bff;
 }
 html {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
   font-size: 50px;
 }
 @media screen and (min-width: 320px) {
