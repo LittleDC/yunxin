@@ -1,0 +1,72 @@
+body {
+  min-width: 320px;
+  width: 15rem;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: Arial, Helvetica;
+  min-height: 1vh;
+}
+
+.none {
+  display: none !important;
+}
+
+body>div:first-child {
+  // background-color: #fff;
+  overflow: hidden;
+}
+
+@baseFont: 25;
+
+header {
+  position: relative;
+  text-align: center;
+  height: (44rem/@baseFont);
+  font-size: (18rem/@baseFont);
+  line-height: (44rem/@baseFont);
+  padding-top: (10rem/@baseFont);
+  // margin-bottom: (19rem/@baseFont);
+  background-color: #fff;
+
+  i {
+    position: absolute;
+    top: (22rem/@baseFont);
+    left: (15rem/@baseFont);
+    width: (22rem/@baseFont);
+    height: (22rem/@baseFont);
+    // margin: (10rem/@baseFont);
+    background: url(../ico/antOutline-left@2x.png) no-repeat;
+    background-size: 100%;
+  }
+}
+
+article {
+  margin-top: (10rem/@baseFont);
+
+  .search_bar {
+    height: (35rem/@baseFont);
+    padding: 0 (13rem/@baseFont);
+    display: flex;
+    align-items: center;
+    border: (2rem/@baseFont) solid #bbbbbb;
+    border-radius: (18rem/@baseFont);
+
+    input {
+      font-size: (14rem/@baseFont);
+      padding: 0 (5rem/@baseFont);
+      outline: none;
+      border: 0;
+    }
+  }
+
+  .search_bar::before {
+    content: '\e986';
+    font-family: 'icomoon';
+    display: block;
+    font-size: (20rem/@baseFont);
+    line-height: (24rem/@baseFont);
+    color: #c2c2c7;
+    height: (24rem/@baseFont);
+    width: (24rem/@baseFont);
+  }
+}
