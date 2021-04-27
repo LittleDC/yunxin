@@ -1,0 +1,98 @@
+body {
+  min-width: 320px;
+  width: 15rem;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: Arial, Helvetica;
+  min-height: 1vh;
+  background-color: #f4f6f7;
+}
+
+.none {
+  display: none !important;
+}
+
+body>div:first-child {
+  // background-color: #fff;
+  overflow: hidden;
+}
+
+@baseFont: 25;
+
+header {
+  position: relative;
+  text-align: center;
+  height: (44rem/@baseFont);
+  font-size: (18rem/@baseFont);
+  line-height: (44rem/@baseFont);
+  padding-top: (10rem/@baseFont);
+  // margin-bottom: (19rem/@baseFont);
+  background-color: #fff;
+
+  i {
+    position: absolute;
+    top: (22rem/@baseFont);
+    left: (15rem/@baseFont);
+    width: (22rem/@baseFont);
+    height: (22rem/@baseFont);
+    // margin: (10rem/@baseFont);
+    background: url(../ico/antOutline-left@2x.png) no-repeat;
+    background-size: 100%;
+  }
+}
+
+article {}
+
+footer {
+  margin: (35rem/@baseFont) (12rem/@baseFont);
+  position: fixed;
+  bottom: 0;
+
+  div:last-child {
+    background-color: #227bff;
+    height: (45rem/@baseFont);
+    width: calc(15rem - 2 * (12rem/@baseFont));
+    margin-top: (30rem/@baseFont);
+    text-align: center;
+    font-size: (15rem/@baseFont);
+    line-height: (45rem/@baseFont);
+    color: #fff;
+    border-radius: (5rem/@baseFont);
+  }
+
+  ul {
+    font-size: (16rem/@baseFont);
+    background-color: #fff;
+    padding: 0 (20rem/@baseFont);
+    border-radius: (10rem/@baseFont);
+    overflow: hidden;
+
+    li {
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+      align-items: center;
+      height: (60rem/@baseFont);
+      line-height: (60rem/@baseFont);
+      // padding: 0 (35rem/@baseFont) 0 (15rem/@baseFont);
+      padding-right: (20rem/@baseFont);
+      border-bottom: (1rem/@baseFont) solid rgba(187, 187, 187, .2);
+    }
+
+    li:last-child {
+      border-bottom: 0;
+    }
+
+    li::after {
+      position: absolute;
+      right: 0;
+      content: '';
+      display: block;
+      width: (24rem/@baseFont);
+      height: (24rem/@baseFont);
+      background: url(../ico/md-arrow_right@2x.png) no-repeat;
+      background-size: 100%;
+      margin-right: (10rem/@baseFont);
+    }
+  }
+}
