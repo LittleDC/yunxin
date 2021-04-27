@@ -10,3 +10,6 @@ $('nav li')[2].ontouchstart = () => {
 $('nav li')[3].ontouchstart = () => {
     location.href = './statistics.html'
 }
+$('section>div')[0].ontouchstart = () => {
+    location.href = './study_room.html'
+}
