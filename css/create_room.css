@@ -42,27 +42,7 @@ article {
   background-color: #f4f6f7;
   font-size: 0.6rem;
 }
-article .photo {
-  display: flex;
-  position: relative;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0.8rem 0;
-  padding: 0 1.4rem 0 0.6rem;
-  background-color: #fff;
-  height: 3.6rem;
-}
-article .photo > div {
-  width: 2.2rem;
-  height: 2.2rem;
-  border-radius: 1.1rem;
-  overflow: hidden;
-}
-article .photo > div img {
-  width: 2.2rem;
-  margin-top: -25%;
-}
-article .account {
+article .name {
   display: flex;
   position: relative;
   justify-content: space-between;
@@ -72,8 +52,11 @@ article .account {
   background-color: #fff;
   height: 2rem;
 }
+article .name > div {
+  font-size: 0.72rem;
+}
 article .photo::after,
-article .account::after,
+article .name::after,
 article .details li::after {
   position: absolute;
   right: 0;
@@ -94,7 +77,7 @@ article ul.details li {
   position: relative;
   justify-content: space-between;
   align-items: center;
-  height: 2.4rem;
+  height: 2rem;
   padding-right: 0.8rem;
   border-bottom: 0.04rem solid rgba(187, 187, 187, 0.2);
 }
@@ -115,4 +98,10 @@ footer div {
   line-height: 1.8rem;
   color: #fff;
   border-radius: 0.2rem;
+}
+footer div:last-child {
+  margin-top: 0.8rem;
+}
+.invite_box {
+  position: absolute;
 }

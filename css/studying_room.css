@@ -13,6 +13,12 @@ body {
 .red {
   color: red;
 }
+.blue {
+  color: blue;
+}
+.bg-red {
+  background-color: #fed4cfec;
+}
 body > div:first-child {
   overflow: hidden;
 }
@@ -52,7 +58,6 @@ article .head .room-name i {
   height: 0.8rem;
   border-radius: 0.16rem;
   margin-left: 0.6rem;
-  background-color: #c7deff;
   text-align: center;
   line-height: 0.8rem;
   font-size: 0.48rem;
@@ -125,4 +130,25 @@ article .details ul li:last-child p img {
   width: 6rem;
   height: 6rem;
   margin-top: 0.4rem;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.64rem;
+  line-height: 2rem;
+  color: white;
+}
+footer .manage,
+footer .disband {
+  width: 6rem;
+  height: 2rem;
+  border-radius: 0.24rem;
+}
+footer .manage {
+  background-color: #227bff;
+  margin-right: 1rem;
+}
+footer .disband {
+  background-color: #00cb6f;
 }

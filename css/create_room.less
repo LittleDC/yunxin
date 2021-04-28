@@ -55,30 +55,7 @@ article {
   background-color: #f4f6f7;
   font-size: (15rem/@baseFont);
 
-  .photo {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
-    margin: (20rem/@baseFont) 0;
-    padding: 0 (35rem/@baseFont) 0 (15rem/@baseFont);
-    background-color: #fff;
-    height: (90rem/@baseFont);
-
-    >div {
-      width: (55rem/@baseFont);
-      height: (55rem/@baseFont);
-      border-radius: (27.5rem/@baseFont);
-      overflow: hidden;
-
-      img {
-        width: (55rem/@baseFont);
-        margin-top: -25%;
-      }
-    }
-  }
-
-  .account {
+  .name {
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -87,10 +64,14 @@ article {
     padding: 0 (35rem/@baseFont) 0 (15rem/@baseFont);
     background-color: #fff;
     height: (50rem/@baseFont);
+
+    >div {
+      font-size: (18rem/@baseFont);
+    }
   }
 
   .photo::after,
-  .account::after,
+  .name::after,
   .details li::after {
     position: absolute;
     right: 0;
@@ -112,7 +93,7 @@ article {
       position: relative;
       justify-content: space-between;
       align-items: center;
-      height: (60rem/@baseFont);
+      height: (50rem/@baseFont);
       // padding: 0 (35rem/@baseFont) 0 (15rem/@baseFont);
       padding-right: (20rem/@baseFont);
       border-bottom: (1rem/@baseFont) solid rgba(187, 187, 187, .2);
@@ -140,4 +121,13 @@ footer {
     color: #fff;
     border-radius: (5rem/@baseFont);
   }
+
+  div:last-child {
+    margin-top: (20rem/@baseFont);
+  }
+}
+
+.invite_box {
+  // display: none;
+  position: absolute;
 }

@@ -16,6 +16,14 @@ body {
   color: red;
 }
 
+.blue {
+  color: blue;
+}
+
+.bg-red {
+  background-color: #fed4cfec;
+}
+
 body>div:first-child {
   // background-color: #fff;
   overflow: hidden;
@@ -65,7 +73,7 @@ article {
         height: (20rem/@baseFont);
         border-radius: (4rem/@baseFont);
         margin-left: (15rem/@baseFont);
-        background-color: #c7deff;
+        // background-color: #fed4cfec;
         text-align: center;
         line-height: (20rem/@baseFont);
         font-size: (12rem/@baseFont);
@@ -156,5 +164,31 @@ article {
         }
       }
     }
+  }
+
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: (16rem/@baseFont);
+  line-height: (50rem/@baseFont);
+  color: white;
+
+  .manage,
+  .disband {
+    width: (150rem/@baseFont);
+    height: (50rem/@baseFont);
+    border-radius: (6rem/@baseFont);
+  }
+
+  .manage {
+    background-color: #227bff;
+    margin-right: (25rem/@baseFont);
+  }
+
+  .disband {
+    background-color: #00cb6f;
   }
 }
