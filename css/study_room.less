@@ -12,6 +12,10 @@ body {
   display: none !important;
 }
 
+.red {
+  color: red;
+}
+
 body>div:first-child {
   // background-color: #fff;
   overflow: hidden;
@@ -42,5 +46,115 @@ header {
 }
 
 article {
-  // 待添加
+  .head {
+    padding: (15rem/@baseFont) 0;
+    margin: 0 (20rem/@baseFont);
+    border-bottom: (1rem/@baseFont) solid rgba(187, 187, 187, 0.2);
+
+    >div:first-child {
+      display: flex;
+      align-items: center;
+
+      h4 {
+        font-size: (20rem/@baseFont);
+      }
+
+      i {
+        display: block;
+        width: (55rem/@baseFont);
+        height: (20rem/@baseFont);
+        border-radius: (4rem/@baseFont);
+        margin-left: (15rem/@baseFont);
+        background-color: #c7deff;
+        text-align: center;
+        line-height: (20rem/@baseFont);
+        font-size: (12rem/@baseFont);
+      }
+    }
+
+    .room-time {
+      display: flex;
+      padding-top: (10rem/@baseFont);
+
+      >div {
+        flex: 1;
+      }
+
+      .begin-time,
+      .end-time {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+
+        span {
+          text-align: center;
+          font-size: (22rem/@baseFont);
+        }
+
+        p {
+          text-align: center;
+          font-size: (15rem/@baseFont);
+          color: #29313dad;
+        }
+      }
+
+      .duration {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+          display: flex;
+          font-size: (13rem/@baseFont);
+          padding: (3rem/@baseFont) (10rem/@baseFont);
+          border: (2rem/@baseFont) solid #29313d;
+          text-align: center;
+        }
+      }
+
+      .duration::before,
+      .duration::after {
+        content: '';
+        display: block;
+        width: (20rem/@baseFont);
+        height: (2rem/@baseFont);
+        background-color: #29313d;
+        // border: (1rem/@baseFont) solid #29313d;
+      }
+    }
+  }
+
+  .details {
+    ul {
+      padding: (20rem/@baseFont);
+
+      li {
+        display: flex;
+        justify-content: space-between;
+        font-size: (14rem/@baseFont);
+        margin-bottom: (15rem/@baseFont);
+
+        span {
+          color: #646464;
+        }
+      }
+    }
+
+    ul li:last-child {
+      flex-direction: column;
+
+      p {
+        display: flex;
+        justify-content: center;
+
+        img {
+          width: (150rem/@baseFont);
+          height: (150rem/@baseFont);
+          // margin: auto;
+          margin-top: (10rem/@baseFont);
+        }
+      }
+    }
+  }
 }

@@ -10,6 +10,9 @@ body {
 .none {
   display: none !important;
 }
+.red {
+  color: red;
+}
 body > div:first-child {
   overflow: hidden;
 }
@@ -30,4 +33,96 @@ header i {
   height: 0.88rem;
   background: url(../ico/antOutline-left@2x.png) no-repeat;
   background-size: 100%;
+}
+article .head {
+  padding: 0.6rem 0;
+  margin: 0 0.8rem;
+  border-bottom: 0.04rem solid rgba(187, 187, 187, 0.2);
+}
+article .head > div:first-child {
+  display: flex;
+  align-items: center;
+}
+article .head > div:first-child h4 {
+  font-size: 0.8rem;
+}
+article .head > div:first-child i {
+  display: block;
+  width: 2.2rem;
+  height: 0.8rem;
+  border-radius: 0.16rem;
+  margin-left: 0.6rem;
+  background-color: #c7deff;
+  text-align: center;
+  line-height: 0.8rem;
+  font-size: 0.48rem;
+}
+article .head .room-time {
+  display: flex;
+  padding-top: 0.4rem;
+}
+article .head .room-time > div {
+  flex: 1;
+}
+article .head .room-time .begin-time,
+article .head .room-time .end-time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+article .head .room-time .begin-time span,
+article .head .room-time .end-time span {
+  text-align: center;
+  font-size: 0.88rem;
+}
+article .head .room-time .begin-time p,
+article .head .room-time .end-time p {
+  text-align: center;
+  font-size: 0.6rem;
+  color: #29313dad;
+}
+article .head .room-time .duration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+article .head .room-time .duration span {
+  display: flex;
+  font-size: 0.52rem;
+  padding: 0.12rem 0.4rem;
+  border: 0.08rem solid #29313d;
+  text-align: center;
+}
+article .head .room-time .duration::before,
+article .head .room-time .duration::after {
+  content: '';
+  display: block;
+  width: 0.8rem;
+  height: 0.08rem;
+  background-color: #29313d;
+}
+article .details ul {
+  padding: 0.8rem;
+}
+article .details ul li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.56rem;
+  margin-bottom: 0.6rem;
+}
+article .details ul li span {
+  color: #646464;
+}
+article .details ul li:last-child {
+  flex-direction: column;
+}
+article .details ul li:last-child p {
+  display: flex;
+  justify-content: center;
+}
+article .details ul li:last-child p img {
+  width: 6rem;
+  height: 6rem;
+  margin-top: 0.4rem;
 }
