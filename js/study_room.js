@@ -1,3 +1,3 @@
-$('#back')[0].ontouchstart = () => {
+$('#back')[0].ontouchend = () => {
     location.href = "./index.html"
 }

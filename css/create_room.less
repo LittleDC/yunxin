@@ -1,0 +1,143 @@
+body {
+  min-width: 320px;
+  width: 15rem;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: Arial, Helvetica;
+  // background-color: #227bff;
+  background-color: #f4f6f7;
+  min-height: 1vh;
+}
+
+.none {
+  display: none !important;
+}
+
+.gray {
+  color: #aba6a6 !important;
+}
+
+.blue {
+  color: #227bff !important;
+}
+
+body>div:first-child {
+  // background-color: #fff;
+  background-color: #f4f6f7;
+  overflow: hidden;
+}
+
+@baseFont: 25;
+
+header {
+  position: relative;
+  text-align: center;
+  height: (44rem/@baseFont);
+  font-size: (18rem/@baseFont);
+  line-height: (44rem/@baseFont);
+  padding-top: (10rem/@baseFont);
+  // margin-bottom: (19rem/@baseFont);
+  background-color: #fff;
+
+  i {
+    position: absolute;
+    top: (22rem/@baseFont);
+    left: (15rem/@baseFont);
+    width: (22rem/@baseFont);
+    height: (22rem/@baseFont);
+    // margin: (10rem/@baseFont);
+    background: url(../ico/antOutline-left@2x.png) no-repeat;
+    background-size: 100%;
+  }
+}
+
+article {
+  background-color: #f4f6f7;
+  font-size: (15rem/@baseFont);
+
+  .photo {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    margin: (20rem/@baseFont) 0;
+    padding: 0 (35rem/@baseFont) 0 (15rem/@baseFont);
+    background-color: #fff;
+    height: (90rem/@baseFont);
+
+    >div {
+      width: (55rem/@baseFont);
+      height: (55rem/@baseFont);
+      border-radius: (27.5rem/@baseFont);
+      overflow: hidden;
+
+      img {
+        width: (55rem/@baseFont);
+        margin-top: -25%;
+      }
+    }
+  }
+
+  .account {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    margin: (20rem/@baseFont) 0;
+    padding: 0 (35rem/@baseFont) 0 (15rem/@baseFont);
+    background-color: #fff;
+    height: (50rem/@baseFont);
+  }
+
+  .photo::after,
+  .account::after,
+  .details li::after {
+    position: absolute;
+    right: 0;
+    content: '';
+    display: block;
+    width: (24rem/@baseFont);
+    height: (24rem/@baseFont);
+    background: url(../ico/md-arrow_right@2x.png) no-repeat;
+    background-size: 100%;
+    margin-right: (10rem/@baseFont);
+  }
+
+  ul.details {
+    background-color: #fff;
+    padding: 0 (15rem/@baseFont) 0 (15rem/@baseFont);
+
+    li {
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+      align-items: center;
+      height: (60rem/@baseFont);
+      // padding: 0 (35rem/@baseFont) 0 (15rem/@baseFont);
+      padding-right: (20rem/@baseFont);
+      border-bottom: (1rem/@baseFont) solid rgba(187, 187, 187, .2);
+    }
+
+    li:last-child {
+      border-bottom: 0;
+    }
+
+    li::after {
+      margin-right: (-5rem/@baseFont);
+    }
+  }
+}
+
+footer {
+  margin: (35rem/@baseFont) (12rem/@baseFont);
+
+  div {
+    background-color: #227bff;
+    height: (45rem/@baseFont);
+    text-align: center;
+    font-size: (15rem/@baseFont);
+    line-height: (45rem/@baseFont);
+    color: #fff;
+    border-radius: (5rem/@baseFont);
+  }
+}
