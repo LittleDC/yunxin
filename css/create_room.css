@@ -112,7 +112,7 @@ footer div:last-child {
   height: 100%;
   left: 0;
   top: 2.16rem;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .invite_box .invite_details {
   position: relative;
