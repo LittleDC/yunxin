@@ -1,4 +1,5 @@
 body {
+  position: relative;
   min-width: 320px;
   width: 15rem;
   margin: 0 auto;
@@ -128,6 +129,99 @@ footer {
 }
 
 .invite_box {
-  // display: none;
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+  padding-top: (60rem/@baseFont);
   position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: (54rem/@baseFont);
+  background-color: rgba(0, 0, 0, .1);
+
+  .invite_details {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    width: (300rem/@baseFont);
+    height: (460rem/@baseFont);
+    border-radius: (20rem/@baseFont);
+    // border: (1rem/@baseFont) solid rgba(187, 187, 187, .2);
+    background-color: #fff;
+    padding-top: (30rem/@baseFont);
+    font-size: (16rem/@baseFont);
+    overflow: hidden;
+
+    h4 {
+      font-size: (20rem/@baseFont);
+      font-weight: normal;
+      text-align: center;
+    }
+
+    input[type='search'] {
+      outline: none;
+      height: (40rem/@baseFont);
+      width: (249rem/@baseFont);
+      border: (1rem/@baseFont) solid #bbbbbb;
+      border-radius: (10rem/@baseFont);
+      padding: 0 (10rem/@baseFont);
+      margin: (15rem/@baseFont) 0;
+    }
+
+    ul {
+      width: (250rem/@baseFont);
+      border-top: #e5e5e5 solid (2rem/@baseFont);
+      border-bottom: #e5e5e5 solid (2rem/@baseFont);
+
+      // height: (140rem/@baseFont);
+      li {
+        padding: (10rem/@baseFont) 0;
+        display: flex;
+        align-items: center;
+      }
+
+      li::before {
+        box-sizing: border-box;
+        font-family: 'icomoon';
+        color: #fff;
+        content: '\ea10';
+        display: block;
+        width: (14rem/@baseFont);
+        height: (14rem/@baseFont);
+        border-radius: (7rem/@baseFont);
+        text-align: center;
+        line-height: (14rem/@baseFont);
+        font-size: (8rem/@baseFont);
+        background-color: #09bb07;
+        margin: 0 (10rem/@baseFont);
+      }
+    }
+
+    .invite_buttons {
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      width: 100%;
+
+      input {
+        box-sizing: border-box;
+        width: 50%;
+        height: (40rem/@baseFont);
+        border: 0;
+        color: white;
+        // font-weight: 500;
+      }
+
+      input:first-child {
+        background-color: red;
+      }
+
+      input:last-child {
+        background-color: #227bff;
+      }
+    }
+  }
 }

@@ -1,4 +1,5 @@
 body {
+  position: relative;
   min-width: 320px;
   width: 15rem;
   margin: 0 auto;
@@ -103,5 +104,85 @@ footer div:last-child {
   margin-top: 0.8rem;
 }
 .invite_box {
+  display: flex;
+  justify-content: center;
+  padding-top: 2.4rem;
   position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 2.16rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.invite_box .invite_details {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 12rem;
+  height: 18.4rem;
+  border-radius: 0.8rem;
+  background-color: #fff;
+  padding-top: 1.2rem;
+  font-size: 0.64rem;
+  overflow: hidden;
+}
+.invite_box .invite_details h4 {
+  font-size: 0.8rem;
+  font-weight: normal;
+  text-align: center;
+}
+.invite_box .invite_details input[type='search'] {
+  outline: none;
+  height: 1.6rem;
+  width: 9.96rem;
+  border: 0.04rem solid #bbbbbb;
+  border-radius: 0.4rem;
+  padding: 0 0.4rem;
+  margin: 0.6rem 0;
+}
+.invite_box .invite_details ul {
+  width: 10rem;
+  border-top: #e5e5e5 solid 0.08rem;
+  border-bottom: #e5e5e5 solid 0.08rem;
+}
+.invite_box .invite_details ul li {
+  padding: 0.4rem 0;
+  display: flex;
+  align-items: center;
+}
+.invite_box .invite_details ul li::before {
+  box-sizing: border-box;
+  font-family: 'icomoon';
+  color: #fff;
+  content: '\ea10';
+  display: block;
+  width: 0.56rem;
+  height: 0.56rem;
+  border-radius: 0.28rem;
+  text-align: center;
+  line-height: 0.56rem;
+  font-size: 0.32rem;
+  background-color: #09bb07;
+  margin: 0 0.4rem;
+}
+.invite_box .invite_details .invite_buttons {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+}
+.invite_box .invite_details .invite_buttons input {
+  box-sizing: border-box;
+  width: 50%;
+  height: 1.6rem;
+  border: 0;
+  color: white;
+}
+.invite_box .invite_details .invite_buttons input:first-child {
+  background-color: red;
+}
+.invite_box .invite_details .invite_buttons input:last-child {
+  background-color: #227bff;
 }

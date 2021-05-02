@@ -21,3 +21,12 @@ $('#invite')[0].addEventListener('click', function () {
 // $('#invite').click(function () {
 //     console.log(this);
 // })
+
+$('#cancel')[0].addEventListener('click', () => {
+    console.log('cancel');
+    $('.invite_box').toggleClass('none')
+})
+
+$('#confirm')[0].addEventListener('click', function () {
+    console.log('confirm');
+})
